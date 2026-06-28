@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- 배포용 base tag -->
+    <base href="/portfolio_no.01/" />
+
+    <!-- 개발용 base tag -->
+    <!-- <base href="/"> -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newB.tria🌿 | 학생증 인증 행사</title>
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/event_student.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body class="event_page">
+    <header id="wrap_header"></header>
+    <div id="wrap_main">
+      <div class="main">
+        <div class="main_image">
+          <div class="note">
+            <div class="note_background">
+              <img src="./images/note_background.png" alt="background image" />
+            </div>
+            <div class="img_heart_flower">
+              <img src="./images/asset_heart_flower.png" alt="flower image" />
+            </div>
+            <div class="img_cube">
+              <img src="./images/asset_newbtria_cube.png" alt="cube image" />
+            </div>
+            <div class="img_ring">
+              <img src="./images/asset_ring.png" alt="ring image" />
+            </div>
+            <div class="img_triangles_purple">
+              <img
+                src="./images/asset_triangles_purple.png"
+                alt="triangles purple image"
+              />
+            </div>
+            <div class="img_wave">
+              <img src="./images/asset_wave.png" alt="wave image" />
+            </div>
+            <div class="img_pink_ball">
+              <img src="./images/asset_ball_pink.png" alt="pink ball image" />
+            </div>
+            <div class="note_pad">
+              <img src="./images/note_pad.png" alt="note pad image" />
+              <div class="note_logo">
+                <img
+                  src="./images/note_logo.png"
+                  alt="note logo image"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000"
+                />
+              </div>
+              <a href="#" class="btn_apply"> 무료 샘플 신청하러 가기 </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="wrap_footer"></footer>
+    <!-- SCRIPT -->
+    <script src="./js/jquery-4.0.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      fetch('./pages/header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('wrap_header').innerHTML = data;
+        });
+    </script>
+    <script>
+      fetch('./pages/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('wrap_footer').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

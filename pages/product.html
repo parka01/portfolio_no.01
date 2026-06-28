@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- 배포용 base tag -->
+    <base href="/portfolio_no.01/" />
+
+    <!-- 개발용 base tag -->
+    <!-- <base href="/"> -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newB.tria🌿 | 제품</title>
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body class="product_page">
+    <div id="wrap_main_01">
+      <header id="wrap_header"></header>
+      <section class="main_01">
+        <div class="box_add_cart">
+          <div class="product_visual">
+            <img
+              src="./images/productphoto_collagen_toner.png"
+              alt="newB.tria Collagen Toner"
+            />
+          </div>
+          <div class="product_details">
+            <span class="brand_tag">부산 낙동강 쫀쫀 촉촉 라인 시리즈</span>
+            <h1>Pure Bloom <br />Collagen Cushion</h1>
+            <p class="description">
+              낙동강의 촉촉하고 맑은 물과 뉴트리아의 쫀쫀한 콜라겐으로 피부에
+              생기를 부여해 보세요.
+              <br />피부 결 사이사이를 촘촘하게 채우는 콜라겐의 힘으로 오늘
+              하루, 당신의 가장 맑은 순간을 유지하세요.
+            </p>
+            <div class="price_row">
+              <span class="price">15,000 KRW</span>
+            </div>
+            <div class="btn_group">
+              <button
+                class="buy_btn"
+                onclick="
+                  window.open(
+                    'https:/oliveyoung.com',
+                    '_blank',
+                    'noopener,noreferrer',
+                  )
+                "
+              >
+                구매하러 가기
+              </button>
+            </div>
+          </div>
+        </div>
+        <section class="split_details">
+          <div>
+            <img src="./images/product_detail_toner.png" alt="" />
+          </div>
+        </section>
+      </section>
+    </div>
+    <footer id="wrap_footer"></footer>
+    <!-- SCRIPT -->
+    <script src="./js/jquery-4.0.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      fetch('./pages/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('wrap_footer').innerHTML = data;
+        });
+    </script>
+    <script>
+      fetch('./pages/header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('wrap_header').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

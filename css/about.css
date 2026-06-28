@@ -1,0 +1,310 @@
+@import url(./animation.css);
+
+/* RESPONSIVE CSS */
+/* MOBILE */
+@media screen and (max-width: 750px) {
+    #product_move {
+        right: -90%;
+    }
+}
+
+
+/* PC */
+@media screen and (min-width: 750px) {
+    #product_move {
+        right: 20%;
+    }
+}
+
+
+/* ABOUT_PAGE */
+.about_page {
+    background: url(../images/bg_grid_blue.png) repeat top center;
+
+}
+
+.about_page #wrap_header {
+    background-color: var(--river);
+}
+
+.about_page #wrap_main_01 {
+    margin: 0 auto;
+
+    .float_txt {
+        bottom: 50px;
+        left: 100px;
+        animation: floating_text 3s ease-in-out infinite;
+    }
+}
+
+.about_page .wrap_banner {
+    display: flex;
+    flex-direction: column;
+    max-width: 1320px;
+    margin: 0 auto;
+    height: 800px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.about_page .box_banner_logo {
+    display: flex;
+    width: 100%;
+    position: sticky;
+    justify-content: center;
+    top: 0;
+    background: url(../images/about_plogging.png) center top clamp(0px, calc(0px + -2vw), -30px);
+    background-size: cover;
+    height: 500px;
+    overflow-x: clip;
+}
+
+.about_page #banner_logo {
+    top: 30px;
+    width: 450px;
+    position: absolute;
+    mix-blend-mode: overlay;
+    filter: drop-shadow(4px 4px 3px black) blur(0.5px);
+
+    img {
+        width: 100%;
+        opacity: 0.8;
+    }
+}
+
+.box_conveyor_belt {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* #product_move position */
+    z-index: 0;
+    overflow-x: clip;
+}
+
+#product_move {
+    display: flex;
+    align-items: flex-end;
+    bottom: clamp(50px, calc(50px + 1.5vw), 70px);
+
+    transform: translateX(550px);
+    position: absolute;
+    transition: all 1s;
+    z-index: 1;
+
+    li {
+        margin-right: 100px;
+        filter: drop-shadow(10px 10px 5px #2332497c);
+        position: relative;
+    }
+
+    li:hover {
+        transform: translateY(-50px) scale(1.2);
+        transition: all ease-in-out 0.5s;
+    }
+
+    .box_tooltip {
+        width: 0px;
+        height: 80px;
+        position: absolute;
+        right: -5px;
+        top: -30px;
+    }
+
+    li:hover .box_tooltip {
+        display: block;
+    }
+
+    .tooltip {
+        width: 140px;
+        height: 80px;
+        left: 0px;
+        background-color: var(--lemon-daffodil);
+        border-radius: 5px;
+        padding: 15px;
+        transition: all 0.3s ease-in-out;
+        font-size: 12px;
+        clip-path: rect(0px 0px 80px 0px);
+        z-index: 3;
+        position: relative;
+        outline: dashed 1.8px var(--river);
+        outline-offset: -5px;
+    }
+
+    li:hover .tooltip {
+        width: 140px;
+        height: 80px;
+        transition: all 1s ease-in-out;
+        clip-path: rect(0px 140px 80px 0px);
+    }
+}
+
+#conveyor_belt {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    background: var(--lemon-daffodil);
+    box-shadow: 0px 5px 15px #00000031;
+    width: 140%;
+    padding-block: 20px;
+    transform: skewX(-33deg);
+    left: -90px;
+    position: relative;
+    height: clamp(110px, calc(110px + 3.5vw), 180px);
+
+    li {
+        width: 10%;
+        aspect-ratio: 1;
+        height: 100%;
+        margin-right: 50px;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.about_page .main_01 {
+    box-sizing: border-box;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    background: var(--cloud);
+    padding-inline: clamp(10px, calc(10px + 1.5vw), 100px);
+
+    .txt_expand {
+        font-size: 50px;
+        margin-bottom: 100px;
+        text-decoration: underline;
+        text-decoration-color: #cee0f1;
+        text-underline-offset: -8px;
+        text-decoration-thickness: 20px;
+    }
+
+    .float {
+        width: 100%;
+        display: flex;
+        overflow-x: clip;
+    }
+
+    .float.left {
+        justify-content: flex-start;
+        padding-left: clamp(5px, calc(-160px + 20vw), 160px);
+        left: 30px;
+    }
+
+    .float.right {
+        justify-content: flex-end;
+        padding-right: clamp(5px, calc(-160px + 20vw), 160px);
+        right: 30px;
+    }
+
+    .rotate_left {
+        position: relative;
+        left: 30px;
+        transform: rotateZ(-8deg);
+        width: 50%;
+        justify-items: center;
+    }
+
+    .float_star {
+        position: absolute;
+        right: 7%;
+        top: 40px;
+        font-size: clamp(30px, calc(30px + 2vw), 70px);
+        z-index: 5;
+        animation: floating_text 4s ease-in-out infinite;
+    }
+
+    .rotate_right {
+        position: relative;
+        right: 30px;
+        transform: rotateZ(10deg);
+        top: clamp(-200px, calc(0px - 15vw), -30px);
+        width: 50%;
+        justify-items: center;
+    }
+
+    .about_txt {
+        width: 50%;
+        background-color: #fffda49c;
+        padding: 30px;
+        margin-bottom: 100px;
+        margin-left: auto;
+    }
+
+    .box_pebble_img {
+        overflow: hidden;
+        border-radius: 50%;
+        aspect-ratio: 1.4;
+        outline-offset: 0px;
+        outline: dashed 3px var(--river);
+        border: solid 10px var(--cloud);
+        display: block;
+        box-shadow: 10px 10px 15px var(--river);
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            transition: all 1s;
+            border-radius: 50%;
+            border: solid 8px var(--lemon-daffodil);
+            display: block;
+        }
+
+        img:hover {
+            transform: scale(1.07);
+            transition: all 1s;
+        }
+    }
+
+    .box_pebble_img.right {
+        width: 70%;
+    }
+
+}
+
+.about_page .main_02 {
+    * {
+        border-radius: 40px;
+    }
+
+    margin: 0 auto;
+    max-width: 1320px;
+    background: #FFF;
+    padding-bottom: 200px;
+
+    .box_video_02 {
+        display: flex;
+        width: 100%;
+        padding-inline: clamp(10px, calc(-60px + 15vw), 200px);
+
+        video {
+            width: 100%;
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: drop-shadow(10px 10px 5px var(--river));
+    }
+}

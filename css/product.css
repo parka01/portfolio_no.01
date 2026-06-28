@@ -1,0 +1,131 @@
+/* PRODUCT_PAGE */
+/* main_01 */
+.product_page .main_01 {
+    box-sizing: border-box;
+    max-width: 1320px;
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.box_add_cart {
+    flex-direction: column;
+    width: 34%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    gap: 80px;
+    position: sticky;
+    top: 0;
+}
+
+.split_details {
+    width: 62%;
+}
+
+.product_visual {
+    flex: 1.2;
+    position: relative;
+}
+
+.product_visual img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px var(--wet-pebbles);
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: block;
+}
+
+.product_visual:hover img {
+    transform: translateY(-10px);
+}
+
+.product_details {
+    flex: 1;
+}
+
+.brand_tag {
+    color: var(--river);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1.05rem;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.price_row {
+    border-top: 1px solid var(--earth);
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.btn_group {
+    display: flex;
+    gap: 15px;
+}
+
+.buy_btn {
+    flex: 2;
+    background-color: var(--earth);
+    color: var(--cloud);
+    border: none;
+    padding: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.buy_btn:hover {
+    background-color: var(--river);
+    letter-spacing: 1px;
+}
+
+.split_details {
+    background-color: var(--cloud);
+    text-align: center;
+
+    div {
+        width: 100%;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    h1 {
+        height: 60px;
+    }
+
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: var(--river);
+    }
+
+    p {
+        max-width: 600px;
+        margin: 0 auto;
+        color: #888;
+    }
+}

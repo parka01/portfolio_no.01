@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 190">
+  <defs>
+ <style>
+
+      /* Light Mode Color */
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #fffda4;
+      }
+
+      .cls-3 {
+        fill: #351b01;
+      }
+
+
+      /* Dark Mode Color */
+
+      @media (prefers-color-scheme: dark){
+      .cls-1 {
+        fill: #351b01;
+      }
+
+      .cls-2 {
+        fill: #fffda4;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+  }
+      
+
+    </style>
+
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <circle class="cls-3" cx="95" cy="95" r="95"/>
+      <path class="cls-1" d="M152.5,152.25v4.25h-4c-13,0-25.5-12.5-25.5-27.75v-64.5c0-16-6.75-23.75-18.75-23.25-13.25,0-24.75,7.75-30.25,18.75v68.5c0,17.25,2.75,23.75,18.25,23.75v4.5h-54.75v-4.5c15.5,0,18.25-6.5,18.25-23.75V62.25c0-18.25-3.75-24.25-11.25-24.25v-4.5h4.25c10.75,0,21.75,5.75,24.25,20.5,6.5-9.75,18-16.75,31.25-16.75,20.5,0,37.25,14.5,37.25,35v55.75c0,18.25,3.75,24.25,11,24.25Z"/>
+    </g>
+    <circle class="cls-2" cx="162.21" cy="134.49" r="15.17"/>
+  </g>
+</svg>

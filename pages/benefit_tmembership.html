@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- 배포용 base tag -->
+    <base href="/portfolio_no.01/" />
+
+    <!-- 개발용 base tag -->
+    <!-- <base href="/"> -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newB.tria🌿 | T멤버십</title>
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/benefit.css" />
+  </head>
+
+  <body class="benefit_page">
+    <header id="wrap_header"></header>
+    <div id="wrap_main">
+      <div class="main">
+        <div class="main_image">
+          <div class="box_assets_top">
+            <div class="asset_cube">
+              <img
+                src="./images/asset_newbtria_cube.png"
+                alt="newbtria cube image"
+              />
+            </div>
+            <div class="asset_ball_pink">
+              <img src="./images/asset_ball_pink.png" alt="ball image" />
+            </div>
+            <div class="asset_t">
+              <img src="./images/asset_tmembership.png" alt="t logo image" />
+            </div>
+            <div class="asset_triangles">
+              <img src="./images/asset_triangles.png" alt="triangles image" />
+            </div>
+          </div>
+          <div class="box_assets_middle">
+            <div class="asset_ball_green">
+              <img src="./images/asset_ball_green.png" alt="ball 2 image" />
+            </div>
+            <div class="asset_donut">
+              <img src="./images/asset_donut_pink.png" alt="donut image" />
+            </div>
+          </div>
+          <div class="box_assets_bottom">
+            <div class="asset_flower">
+              <img
+                src="./images/asset_sale_flower.png"
+                alt="sale flower image"
+              />
+            </div>
+          </div>
+          <img src="./images/tmembership.png" alt="tmembership image" />
+          <a
+            class="btn_down"
+            href="https://play.google.com/store/apps/details?id=com.tms&hl=ko"
+            target="_blank"
+          >
+            T멤버십 앱 다운받고 쿠폰 받기
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer id="wrap_footer"></footer>
+    <!-- SCRIPT -->
+    <script src="./js/jquery-4.0.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      fetch('./pages/header.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('wrap_header').innerHTML = data;
+        });
+    </script>
+    <script>
+      fetch('./pages/footer.html')
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById('wrap_footer').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

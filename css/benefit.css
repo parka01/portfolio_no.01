@@ -1,0 +1,183 @@
+@import url(./animation.css);
+
+/* -------- RESPONSIVE CSS -------- */
+@media screen and (max-width: 750px) {
+    .main {
+        padding-inline: 20px;
+        overflow-x: clip;
+
+        .main_image {
+
+            .box_assets_top,
+            .box_assets_middle,
+            .box_assets_bottom {
+                width: 80%;
+            }
+
+            .box_assets_top {
+                .asset_cube {
+                    width: 90px;
+                }
+
+                .asset_t {
+                    width: 110px;
+                    top: 140px;
+                }
+
+                .asset_triangles {
+                    width: 40px;
+                    top: 100px;
+                    right: -50px;
+                }
+
+                .asset_ball_pink {
+                    right: 30px;
+                }
+            }
+
+            .box_assets_middle {
+                .asset_ball_green {
+                    width: 20px;
+                    top: 130px;
+                    left: 0;
+                }
+            }
+
+            .box_assets_bottom {
+                .asset_flower {
+                    width: 80px;
+                    top: 170px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .main {
+        padding-inline: 250px;
+    }
+}
+
+.benefit_page {
+    background: url(../images/bg_grid_brown.png)repeat center top;
+}
+
+.main {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-block: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .main_image {
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .btn_down {
+        width: 260px;
+        color: #fff;
+        background: #3617ce;
+        padding: 20px 20px;
+        font-size: 17px;
+        position: relative;
+        bottom: clamp(160px, calc(-0px + 15vw), 250px);
+        border-radius: 5px;
+    }
+
+    .btn_down:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 5px 5px 10px var(--wet-pebbles);
+        transition: all 0.5s;
+    }
+
+    .box_assets_top {
+        z-index: 1;
+        width: 100%;
+        height: 5px;
+        filter: drop-shadow(0px 0px 20px #c8c0ff);
+
+        .asset_cube {
+            position: absolute;
+            right: 0;
+            top: -50px;
+            width: 150px;
+            animation: floating_text 4s ease-in-out infinite;
+        }
+
+        .asset_ball_pink {
+            width: 50%;
+            position: absolute;
+            right: 140px;
+            top: 140px;
+            width: 30px;
+            animation: floating_text 2.5s ease-in-out infinite;
+        }
+
+        .asset_t {
+            position: absolute;
+            right: -50px;
+            top: 200px;
+            width: 140px;
+            animation: floating_text 3s ease-in-out infinite;
+        }
+
+        .asset_triangles {
+            position: absolute;
+            right: -60px;
+            top: 150px;
+            width: 70px;
+            animation: floating_text 5s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+        }
+    }
+
+    .box_assets_middle {
+        z-index: 1;
+        width: 100%;
+        height: 5px;
+        filter: drop-shadow(0px 0px 20px #c8c0ff);
+
+        .asset_ball_green {
+            position: absolute;
+            left: 20px;
+            top: 260px;
+            width: 60px;
+            animation: floating_text 4s ease infinite;
+        }
+
+        .asset_donut {
+            position: absolute;
+            left: -110px;
+            top: 220px;
+            width: 100px;
+            animation: floating_text 2.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+        }
+    }
+
+    .box_assets_bottom {
+        z-index: 1;
+        width: 100%;
+        height: 5px;
+        filter: drop-shadow(0px 0px 20px #c8c0ff);
+
+        .asset_flower {
+            position: absolute;
+            left: -40px;
+            top: 320px;
+            width: 140px;
+            animation: floating_text 1.5s ease-in-out infinite;
+        }
+    }
+}

@@ -1,0 +1,196 @@
+/* -------- KEYFRAMES CSS -------- */
+/* -------- 키프레임 CSS -------- */
+@keyframes move_left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes lnb_media_plogging {
+    0% {
+        background-image: url(../images/plogging_01.png);
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(../images/plogging_02.png);
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(../images/plogging_01.png);
+        background-size: cover;
+    }
+}
+
+@keyframes lnb_media_product {
+    0% {
+        background-image: url(../images/collagen_line_2.png);
+        background-size: cover;
+    }
+
+    20% {
+        background-image: url(../images/productphoto_collagen_line_sand.png);
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(../images/productphoto_collagen_line_sand.png);
+        background-size: cover;
+    }
+
+    80% {
+        background-image: url(../images/collagen_line_2.png);
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(../images/collagen_line_2.png);
+        background-size: cover;
+    }
+}
+
+@keyframes slide_show_zoom {
+    0% {
+        background-image: url(../images/bg_main1.png);
+        transform: scale(1);
+    }
+
+    49% {
+        background-image: url(../images/bg_main1.png);
+        transform: scale(1.1);
+    }
+
+    50% {
+        background-image: url(../images/bg_main2.png);
+        transform: scale(1);
+    }
+
+    99% {
+        background-image: url(../images/bg_main2.png);
+        transform: scale(1.1);
+    }
+
+    100% {
+        background-image: url(../images/bg_main1.png);
+        transform: scale(1);
+    }
+}
+
+@keyframes stickySwing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(6deg);
+    }
+
+    22% {
+        transform: rotate(-5deg);
+    }
+
+    34% {
+        transform: rotate(3.8deg);
+    }
+
+    46% {
+        transform: rotate(-2.8deg);
+    }
+
+    58% {
+        transform: rotate(1.8deg);
+    }
+
+    70% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes floating_text {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes enlarge {
+    from {
+        background-size: 100%;
+        background-position: center center;
+    }
+
+    to {
+        background-size: 120%;
+        background-position: center top;
+    }
+}
+
+@keyframes rotateYAxis {
+    from {
+        /* transform: rotateY(0deg); */
+    }
+
+    to {
+        /* transform: rotateY(360deg); */
+        filter: drop-shadow(5px 10px 10px var(--wet-pebbles));
+    }
+}
+
+@keyframes rotate_float {
+    0% {
+        transform: rotateY(0deg) translateY(-20px);
+    }
+
+    50% {
+        transform: rotateY(180deg) translateY(20px);
+    }
+
+    100% {
+        transform: rotateY(360deg) translateY(-20px);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(20px);
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        /* Smooth launch */
+    }
+
+    25% {
+        transform: translateY(-20px);
+        animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        /* Gravity pulls it down fast */
+    }
+
+    50% {
+        transform: translateY(20px);
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        /* Preps for next launch */
+    }
+
+    75% {
+        transform: translateY(-20px);
+        animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
